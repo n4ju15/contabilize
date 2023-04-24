@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="shortcut icon">
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Contabilize</h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="chameOFormulario()">Contato</a>
+        </div>
+
+        <h1>Contabilize</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/anajulia.garialbano15@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu nome" required>
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="Email" placeholder="Digite seu E-mail" required>
+            </label>
+
+            <label>
+                WhatsApp
+                <input type="tel" name="Telefone" placeholder="Digite seu Telefone" required>
+            </label>
+
+            <label>
+                Fale conosco
+                <textarea name="Info" placeholder="Qual sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos serviços</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade completa</h3>
+            <ul>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos do seu negócio</h3>
+            <ul>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos de você</h3>
+            <ul>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+                <li>Imposto de renda</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">Estamos presente no mercado há mais de 4 décadas auxiliando nossos clientes nacionais e internacionais que já
+            atuam ou desejam abrir seus negócios e ingressar no Brasil.
+            <br>
+            Assessoramos investidores que queiram prospectar seus negócios no Brasil e investidores (“brasileiros”)
+            interessados em fazer negócios em outros países.
+            Oferecemos “backoffice” nas áreas Financeira, Recursos Humanos, Tributária e Contabilidade, inclusive a
+            abertura, legalização e regularização de empresas e negócios.
+            <br>
+            Com pesquisas de mercado, montamos toda estrutura organizacional, ambiente operacional e logística de suas
+            atividades, com profissionais qualificados, competentes e continuamente treinados.
+            <br>
+            Somos especialistas em empresas tributadas pelo LUCRO REAL e Contabilidade em IFRS. Assim, o Planejamento
+            das Operações e suas consequências tributárias passam a ser condições de competitividade, inclusive sugerindo
+            incorporação ou desmembramento de atividades.
+        </p>
+    </div>
+</body>
+
+<script>
+    let formulario = document.getElementById("formulario-contato")
+
+    function chameOFormulario(){
+        formulario.className = "mostrar-formulario"
+    }
+
+</script>
+
+</html>
