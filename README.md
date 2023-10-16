@@ -8,8 +8,8 @@ Landing page desenvolvida para empresa de contabilidade. Projeto desenvolvido co
 ![screenshot](img/img_readme.png)
 
 ### Versão para Mobile
-<div display="inline-block">
-    <img width="250px" height="500px" title="projeto-mobile" src="./img/mobile1.png"/>
+<div display="inline-block" align="center">
+    <img width="250px" height="500px" title="projeto-mobile" src="./img/mobile1.png" style="margin-right: 200px;"/>
     <img width="250px" height="500px" title="projeto-mobile" src="./img/mobile2.png"/>
 </div>
 
